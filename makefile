@@ -1,3 +1,5 @@
+CC=clang
+
 .PHONY: clean all test run runtest
 
 BIN_DIR = ./bin
