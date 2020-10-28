@@ -12,6 +12,6 @@ int kseries(int* array, int kol);
 int selectSort(int* array, int kol);
 int soapSort(int* array, int kol);
 int shakeSort(int* array, int kol);
-int randomArray(int *array, int kol, int ks)
+int randomArray(int *array, int kol, int ks);
 
 #endif
