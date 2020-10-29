@@ -144,7 +144,7 @@ CTEST(rand_array_10_elems, shake_moves4) {
     ASSERT_INTERVAL(min_expected, max_expected, result); 
 }
 
-CTEST(rand_array_10_elems, select_sort1) { 
+/*CTEST(rand_array_10_elems, select_sort1) { 
     int a[10] = {87, -82, 126, -695, -95, -154, 46, 76, 12, 0};
     shakeSort(a, 10); 
     int b[10] = {-695, -154, -95, -82, 0, 12, 46, 76, 87, 126};
@@ -227,4 +227,4 @@ CTEST(array_1_elem, shake_sort4) {
     int b[1] = {-9};
     ASSERT_DATA(b, 1, a, 1); 
     system("PAUSE");
-}
+}*/
