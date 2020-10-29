@@ -148,7 +148,7 @@ CTEST(rand_array_10_elems, select_sort1) {
     int result, expected;
     int a[10] = {87, -82, 126, -695, -95, -154, 46, 76, 12, 0};
     selectSort(a, 10); 
-    int b[10] = {-695, -154, -95, -82, 0, 12, 46, 76, 87, 126};
+    int b[10] = {-693, -154, -95, -82, 0, 12, 46, 76, 87, 126};
     for (int i = 0; i < 10; i++) {
         result = a[i];
         expected = b[i];
