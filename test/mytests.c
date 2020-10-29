@@ -111,7 +111,7 @@ CTEST(rand_array_4_elems, soap_moves4) {
     int a[4] = {4, -85, 65, 23};
     const int result = soapSort(a, 4); 
     const int min_expected = 0;
-    const int max_expected = 18; 
+    const int max_expected = 1; 
     ASSERT_INTERVAL(min_expected, max_expected, result);  
 }
 
@@ -132,7 +132,7 @@ CTEST(decr_array_6_elems, shake_moves2) {
 CTEST(array_1_elem, shake_moves3) { 
     int a[1] = {-852};
     const int result = shakeSort(a, 1); 
-    const int expected = 5; 
+    const int expected = 0; 
     ASSERT_EQUAL(expected, result); 
 }
 
