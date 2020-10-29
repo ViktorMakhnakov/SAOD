@@ -111,7 +111,7 @@ CTEST(rand_array_4_elems, soap_moves4) {
     int a[4] = {4, -85, 65, 23};
     const int result = soapSort(a, 4); 
     const int min_expected = 0;
-    const int max_expected = 1; 
+    const int max_expected = 18; 
     ASSERT_INTERVAL(min_expected, max_expected, result);  
 }
 
