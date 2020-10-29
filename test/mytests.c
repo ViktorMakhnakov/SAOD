@@ -217,7 +217,7 @@ CTEST(incr_array_8_elems, shake_sort2) {
 CTEST(decr_array_6_elems, shake_sort3) { 
     int a[6] = {834, 654, 315, 155, 22, 7};
     shakeSort(a, 6); 
-    int b[6] = {7, 22, 155, 315, 654, 834};
+    int b[6] = {7, 22, 155, 315, 655, 834};
     ASSERT_DATA(b, 6, a, 6); 
 }
 
