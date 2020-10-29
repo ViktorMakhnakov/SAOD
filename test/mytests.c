@@ -141,7 +141,8 @@ CTEST(rand_array_10_elems, shake_moves4) {
     const int result = shakeSort(a, 10); 
     const int min_expected = 0;
     const int max_expected = 135; 
-    ASSERT_INTERVAL(min_expected, max_expected, result); 
+    ASSERT_INTERVAL(min_expected, max_expected, result);
+    system("PAUSE"); 
 }
 
 /*CTEST(rand_array_10_elems, select_sort1) { 
