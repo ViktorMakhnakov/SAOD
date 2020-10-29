@@ -6,7 +6,6 @@
 #include <time.h>
 #include <ctype.h>
 
-
 int ksum(int* array, int kol);
 int kseries(int* array, int kol);
 int selectSort(int* array, int kol);

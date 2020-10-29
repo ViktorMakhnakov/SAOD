@@ -1,6 +1,6 @@
 #include "functions.h"
 
-int ksum(int* array, int kol) {
+int ksum(int *array, int kol) {
     int ks = 0;
     for (int i = 0; i < kol; i++) {
         ks += array[i];
@@ -8,22 +8,25 @@ int ksum(int* array, int kol) {
     return ks;
 }
 
-int kseries(int* array, int kol) {
+int kseries(int *array, int kol) {
     int ksr = 1;
     for (int i = 1; i < kol; i++) {
-        if (array[i] < array[i-1])
-        ksr ++;
+        if (array[i] < array[i-1]) {
+            ksr ++;
+        }
     }
     return ksr;
 }
 
-int selectSort(int* array, int kol) {
+int selectSort(int *array, int kol) {
     int buf, k;
     int m = 0;
     for (int i = 0; i < kol - 1; i++) {
         k = i;
         for (int j = i + 1; j < kol; j++) {
-            if (array[j] < array[k]) k = j;
+            if (array[j] < array[k]) {
+                k = j;
+            }
         }
         buf = array[i];
         array[i] = array[k];
@@ -37,7 +40,7 @@ int selectSort(int* array, int kol) {
     return m;
 }
 
-int soapSort(int* array, int kol) {
+int soapSort(int *array, int kol) {
     int buf;
     int m = 0;
     for (int i = 0; i < kol - 1; i++) {
@@ -57,7 +60,7 @@ int soapSort(int* array, int kol) {
     return m;
 }
 
-int shakeSort(int* array, int kol) {
+int shakeSort(int *array, int kol) {
     int buf;
     int m = 0, L = 0, R = kol-1, k = R;
     do {
@@ -81,7 +84,7 @@ int shakeSort(int* array, int kol) {
             }
         }
         R = k;
-    } while (L<R);
+    } while (L < R);
     printf("\nMetod sheykernoy sortirovki\n");
     for (int i = 0; i < kol; i++) {
         printf("%d ", array[i]);

@@ -40,6 +40,7 @@ int main() {
     printf("\nKolichestvo seriy v massive = %d", ksr);
     ks1 = ksum(array, n);
     printf("\nKolichestvo peresylok = %d\n", move);
-    if (ks != ks1) printf("KS ne sovpala");
-    else printf("KS sovpala");
+    if (ks != ks1) printf("KS ne sovpala\n");
+    else printf("KS sovpala\n");
+    system("PAUSE");
 }
