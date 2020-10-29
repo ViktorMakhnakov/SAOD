@@ -280,7 +280,7 @@ CTEST(array_1_elem, shake_sort4) {
     int result, expected;
     int a[1] = {-9};
     shakeSort(a, 1); 
-    int b[1] = {-9};
+    int b[1] = {-8};
     for (int i = 0; i < 1; i++) {
         result = a[i];
         expected = b[i];
