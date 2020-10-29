@@ -9,9 +9,8 @@ int main() {
     n = atoi(e);
     if (n == 0 || n < 0) {
         printf("Vvedeno nekorrektnoe znachenie!\n");
-        //system("PAUSE");
-        return 0;
         system("PAUSE");
+        return 0;
     } 
     int array[n];
     ks = randomArray(array, n, ks);
@@ -35,6 +34,7 @@ int main() {
     default: {
         printf("\n");
         printf("Vvedeno nekorrektnoe znachenie!\n");
+        system("PAUSE");
         return 0;
     }
     }
