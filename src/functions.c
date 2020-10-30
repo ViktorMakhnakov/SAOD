@@ -33,10 +33,6 @@ int selectSort(int *array, int kol) {
         array[k] = buf;
         m += 3;
     }
-    printf("\nMetod pryamogo vibora\n");
-    for (int i = 0; i < kol; i++) {
-        printf("%d ", array[i]);
-    }
     return m;
 }
 
@@ -52,10 +48,6 @@ int soapSort(int *array, int kol) {
                 m += 3;
             }
         }
-    }
-    printf("\nMetod puzyrkovoy sortirovki\n");
-    for (int i = 0; i < kol; i++) {
-        printf("%d ", array[i]);
     }
     return m;
 }
@@ -85,10 +77,6 @@ int shakeSort(int *array, int kol) {
         }
         R = k;
     } while (L < R);
-    printf("\nMetod sheykernoy sortirovki\n");
-    for (int i = 0; i < kol; i++) {
-        printf("%d ", array[i]);
-    }
     return m;
 }
 

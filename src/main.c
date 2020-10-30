@@ -9,6 +9,7 @@ int main() {
     n = atoi(e);
     if (n == 0 || n < 0) {
         printf("Vvedeno nekorrektnoe znachenie!\n");
+        system("PAUSE");
         return 0;
     } 
     int array[n];
@@ -22,17 +23,33 @@ int main() {
     t = atoi(s);
     switch (t) {
     case 1: {
-        move = selectSort(array, n); break;
+        move = selectSort(array, n); 
+        printf("\nMetod pryamogo vibora\n");
+        for (int i = 0; i < n; i++) {
+            printf("%d ", array[i]);
+        }
+        break;
     }
     case 2: {
-        move = soapSort(array, n); break;
+        move = soapSort(array, n); 
+        printf("\nMetod puzyrkovoy sortirovki\n");
+        for (int i = 0; i < n; i++) {
+            printf("%d ", array[i]);
+        }
+    break;
     }
     case 3: {
-        move = shakeSort(array, n); break;
+        move = shakeSort(array, n);
+        printf("\nMetod sheykernoy sortirovki\n");
+        for (int i = 0; i < n; i++) {
+            printf("%d ", array[i]);
+        }
+    break;
     }
     default: {
         printf("\n");
         printf("Vvedeno nekorrektnoe znachenie!\n");
+        system("PAUSE");
         return 0;
     }
     }
